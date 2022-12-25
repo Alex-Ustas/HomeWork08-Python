@@ -3,24 +3,29 @@
 
 def choose() -> str:
     """"Выбор режима работы приложения"""
-    pass
+    print('1 - Вычисление выражения')
+    print('2 - Вычисление уравнения')
+    print('3 - Упростить многочлен')
+    print('4 - Посмотреть историю')
+    print('0 - Завершить')
+    return input('Выберите пункт меню: ')
 
 
-def get_expr() -> str:
+def get_expr(type_expr: str) -> str:
     """"Запрашивает у пользователя задачу"""
-    pass
+    return input(f'Введите {type_expr}: ')
 
 
 def show_res(res: str):
     """Выводит результат"""
-    pass
+    print('Результат вычисления:', res)
 
 
-def erorr_mode():
+def error_mode():
     """Выводит сообщение об ошибке выбора режима"""
-    pass
+    print('Выбран неверный пункт меню')
 
 
 def show_history(history: str):
-    """Выводит истроию оперций"""
-    pass
+    """Выводит историю операций"""
+    print('История операций:', history)
