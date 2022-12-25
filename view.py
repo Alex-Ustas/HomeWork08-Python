@@ -28,4 +28,4 @@ def error_mode():
 
 def show_history(history: str):
     """Выводит историю операций"""
-    print('История операций:', history)
+    print(f'История операций:\n{history}')
